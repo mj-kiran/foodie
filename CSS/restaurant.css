@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Text:100, 300, 400, 500, 600, 700, 800, 900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akronim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+
+/* font-family: 'Big Shoulders Text', cursive; */
+/* font-family: 'Akronim', cursive; */
+ 
+.nav-flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    width: 100%;
+    padding: 0;
+}
+.name{
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    margin-left: -125px;
+    margin-top: 18px;
+    font-size: 35px;
+    text-align: end;
+    font-family: 'Akronim', cursive;
+    color: #ffda64eb;
+}
+
+ 
+.nav-flex-row li {
+    text-decoration: underline;
+    list-style-type: none;
+    padding: 20px 15px;
+    font-size: 20px;
+}
+.fa-utensils{
+    
+    color: #faee9c;
+    font-size: 29px;
+    padding: 5px;
+}
+
+
+ 
+.nav-flex-row li a {
+    font-family: 'Big Shoulders Text', cursive;
+    color: #f4c437bf;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.nav-flex-row li a:hover{
+    background: #0c0b0b;
+}
+ 
+
+#dropdownMenu2{
+    font-family: 'Big Shoulders Text', cursive;
+    color: #f4c437bf;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: 300;
+   
+}
+
+.dropdown:hover{
+    background: #0c0b0b;
+}
+.dropdown-item ,.dropdown-item:hover{
+    font-family: 'Big Shoulders Text', cursive;
+    color: #f4c437bf;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.section-intro {
+    height: 820px;
+    background-image: url(https://wallpaperaccess.com/full/2567134.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.section-intro h1 {
+    text-align: center;
+    color: #f8db5a94;
+    font-size: 4em;
+    font-weight: 1000;
+    margin-top: 57%;
+    font-family: 'Akronim', cursive;
+    font-size: 75px;
+}
+ 
+.section-intro header {
+    display: flex;
+    flex: 4;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.link-to-book-wrapper {
+    flex: 1;
+}
+ 
+
+main{
+    background-image: url(https://ak.picdn.net/shutterstock/videos/1010750342/thumb/1.jpg);
+    background-size: cover;
+    
+}
+main b
+.about-section {
+    display: flex;
+    align-items: center;
+    
+    padding: 50px 30px;
+}
+ 
+.link-to-book {
+    color: #ffffff;
+    display: block;
+    border: 2px solid #ffffff;
+    padding: 5px 10px;
+}
+ 
+a.link-to-book:hover {
+    background-color: #ffffff;
+    color: #95999e;
+    text-decoration: none;
+}
+ 
+.about-section p,
+.about-section h3 {
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    font-family: 'Big Shoulders Text', cursive;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    color: white;
+}
+ 
+#carouselExampleControls{
+    margin-top: 5%;
+}
+.carousel-inner, .menu {
+    height: fit-content;
+    
+}
+ .menu{
+     display: flex;
+     flex-direction: row;
+     margin-top: 5%;
+     gap: 3%;
+ }
+ 
+.row-flex {
+    display: flex;
+    flex-direction: row;
+}
+ 
+.flex-column-form {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 30px 20px;
+}
+ 
+.btn.btn-primary {
+    font-family: 'Big Shoulders Text', cursive;
+    color: #ffffff;
+    background-color: #95999e;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 5px 10px;
+    letter-spacing: 2px;
+    border: 0;
+}
+ 
+.btn.btn-primary:hover {
+    background-color: #747474;
+}
+.opening-time,
+.contact-address , .follow  {
+    flex: 1;
+    margin: 30px 20px;
+    font-size: 1.2em;
+}
+ 
+.icons {
+    display: flex;
+    flex-direction: row;
+    gap: 23px;
+    margin-left: 22px;
+    margin-top: 10px;
+    
+    
+}
+.fa-whatsapp,.fa-facebook ,.fa-twitter{
+    text-decoration: none;
+    color: black;
+}
+.form-group p {
+    font-size: 1.2em;
+}
+ 
+.opening-time p span,
+.contact-address p span {
+    display: block;
+}
+ 
+@media scree and (max-width: 800px) {
+ 
+    .section-intro {
+        height: 500px;
+    }
+ 
+    .about-section p,
+    .about-section h3 {
+        font-size: 20px;
+    }
+ 
+    .carousel-inner {
+        height: auto;
+    }
+ 
+   .row-flex{
+       display: flex;
+       flex-direction: column;
+       
+   }
+}
+ 
+@media screen and (max-width: 576px) {
+    .section-intro {
+        height: 300px;
+    }
+ 
+    .about-section {
+        padding: 30px;
+    }
+ 
+    .section-intro h1 {
+        font-size: 2em;
+    }
+ 
+    .about-section p,
+    .about-section h3 {
+        font-size: 15px;
+    }
+ 
+    .carousel-inner {
+        height: auto;
+    }
+    
+ 
+    .row-flex {
+        display: flex;
+        flex-direction: column;
+    }
+ 
+    .row-flex h3 {
+        font-size: 25px;
+        text-align: center;
+    }
+ 
+    .form-group p {
+        font-size: 15px;
+    }
+ 
+    .opening-time p span,
+    .contact-address p span {
+        font-size: 15px;
+        text-align: center;
+    }
+
+ 
+}
+
+footer{
+    margin-top: 250px;
+    background-color: #626464;
+    border: 1px solid grey;
+    
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+body{
+    background-color: black;
+}
+
+
+    

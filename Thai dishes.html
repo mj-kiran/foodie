@@ -1,0 +1,2198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thai Dishes</title>
+</head>
+
+<body>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="restaurant.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Festive&display=swap');
+
+        .carousel-caption {
+            text-justify: auto;
+            margin-bottom: 116px;
+        }
+
+        .the-menu {
+            font-size: 7rem;
+            font-family: 'Tangerine', cursive;
+            color: #e7e000db;
+
+            font-weight: 900;
+
+        }
+
+        .make-bet {
+            margin-top: -24px;
+            font-size: 2rem;
+            font-family: 'Tangerine', cursive;
+
+
+        }
+
+        body {
+            background-color: black;
+
+        }
+
+        main  {
+            background-image: url(https://cdna.artstation.com/p/assets/images/images/006/761/382/large/yantram-studio-classic-restaurant-interior-idea.jpg?1501060332);
+            background-size: cover;
+        }
+
+        .main-title {
+            font-size: 63px;
+            color: #d9d902e3;
+            font-family: 'Festive', cursive;
+            margin-top: 6%;
+            margin-left: 5%;
+            border-bottom: 1px solid grey;
+        }
+
+        .d-block {
+            background-size: cover;
+        }
+
+        .card-Chole,
+        .card-Rogan {
+            margin-top: 8%;
+        }
+
+        .north {
+            display: flex;
+            flex-direction: row;
+            gap: 3%;
+        }
+    </style>
+    <header>
+
+
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="arousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+
+
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="800">
+                    <img src="https://media.istockphoto.com/photos/asian-food-background-with-various-of-cooking-ingredients-picture-id618041312?k=20&m=618041312&s=612x612&w=0&h=3fRmcc_0ikvYmyfVHUPB5Z9kN12K5Gh3qi5vhGPypD8="
+                        class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="the-menu">Thai Menu</h5>
+                        <p class="make-bet">Make Yourself Better</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item" data-bs-interval="800">
+                    <img src="https://media.istockphoto.com/photos/thai-food-picture-id1273241306?b=1&k=20&m=1273241306&s=170667a&w=0&h=6b7oUTzVOgFtdzcMg_99YpuxRjHELEO2A84NsmM9t0s="
+                        class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="the-menu">Thai Menu</h5>
+                        <p class="make-bet">Make Yourself Better</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="800">
+                    <img src="https://media.istockphoto.com/photos/tom-yam-kung-spicy-thai-soup-picture-id917664866?k=20&m=917664866&s=612x612&w=0&h=gIB5k9Yc8UIuk2VTcgeAnCqWSmHmWSq-WMt0G4Ifspo=" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="the-menu">Thai Menu</h5>
+                        <p class="make-bet">Make Yourself Better</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+    </header>
+    <main class="main">
+
+        <div class="container nrth">
+            <div class="main-title">Traditional Thai Dishes</div>
+
+        </div>
+
+        <!-- Massaman Curry
+        Massaman Curry
+        Massaman Curry -->
+
+
+        <div class="container north nrth">
+            <div class="card card-Chole" style="width: 18rem;">
+                <img src="https://i2.wp.com/lifemadesimplebakes.com/wp-content/uploads/2017/10/massaman-curry-resize-3.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Item Name--Massaman Curry</h5>
+                    <p class="card-text">
+                        Price= 199/-only
+
+                    </p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-chole">
+                        Order Now
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="modal-chole" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Confirm Your Order</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+
+                                    <!-- <form-modal> -->
+                                    <form>
+                                        <div class="mb-3"><input type="text" class="form-control"
+                                                id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name">
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                                aria-describedby="emailHelp" placeholder="Email">
+                                            <div id="emailHelp" class="form-text">We'll never share your email with
+                                                anyone else.</div>
+                                        </div>
+                                        <div class="mb-3">
+
+                                            <input type="text" class="form-control" id="exampleInputPassword1"
+                                                placeholder="Phone Number">
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <p>
+                                                Preferences
+                                            </p>
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                <label class="form-check-label" for="exampleCheck1">hot</label>
+
+
+                                            </div>
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                                                <label class="form-check-label" for="exampleCheck2">Spicy</label>
+
+
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="examplequa"> Quantity</label>
+                                            <input type="number" class="form-control" id="examplequa"
+                                                placeholder="Quantity">
+
+                                        </div>
+
+
+                                    </form>
+
+
+                                    <!-- </form-modal> -->
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#eModal">
+                                        Submit
+                                    </button>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- Pad Kra Prao -->
+            <!-- Pad Kra Prao -->
+            <!-- Pad Kra Prao-->
+
+
+
+            <div class="card card-Rogan" style="width: 18rem;">
+                <img src="https://migrationology.smugmug.com/Thai-Recipes/i-S5pmbsQ/0/X3/thai-chicken-basil-recipe-4-X3.jpg"
+                    alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Item Name--Pad Kra Prao</h5>
+                    <p class="card-text">
+                        Price= 149/-only
+
+                    </p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-chole">
+                        Order Now
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="modal-chole" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Confirm Your Order</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+
+                                    <!-- <form-modal> -->
+                                    <form>
+                                        <div class="mb-3"><input type="text" class="form-control"
+                                                id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name">
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                                aria-describedby="emailHelp" placeholder="Email">
+                                            <div id="emailHelp" class="form-text">We'll never share your email with
+                                                anyone else.</div>
+                                        </div>
+                                        <div class="mb-3">
+
+                                            <input type="text" class="form-control" id="exampleInputPassword1"
+                                                placeholder="Phone Number">
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <p>
+                                                Preferences
+                                            </p>
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                <label class="form-check-label" for="exampleCheck1">hot</label>
+
+
+                                            </div>
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                                                <label class="form-check-label" for="exampleCheck2">Spicy</label>
+
+
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="examplequa"> Quantity</label>
+                                            <input type="number" class="form-control" id="examplequa"
+                                                placeholder="Quantity">
+
+                                        </div>
+
+
+                                    </form>
+
+
+                                    <!-- </form-modal> -->
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#eModal">
+                                        Submit
+                                    </button>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kao Ka Moo-->
+            <!-- Kao Ka Moo -->
+
+
+
+            <div class="card card-Rogan" style="width: 18rem;">
+                <img src="https://cdn.tasteatlas.com/images/dishes/e3624dc5d087442db14c45bc19119801.jpg?w=600&h=450"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Item Name--Kao Ka Mooi</h5>
+                    <p class="card-text">
+                        Price= 289/-only
+
+                    </p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-chole">
+                        Order Now
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="modal-chole" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Confirm Your Order</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+
+                                    <!-- <form-modal> -->
+                                    <form>
+                                        <div class="mb-3"><input type="text" class="form-control"
+                                                id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name">
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                                aria-describedby="emailHelp" placeholder="Email">
+                                            <div id="emailHelp" class="form-text">We'll never share your email with
+                                                anyone else.</div>
+                                        </div>
+                                        <div class="mb-3">
+
+                                            <input type="text" class="form-control" id="exampleInputPassword1"
+                                                placeholder="Phone Number">
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <p>
+                                                Preferences
+                                            </p>
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                <label class="form-check-label" for="exampleCheck1">hot</label>
+
+
+                                            </div>
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                                                <label class="form-check-label" for="exampleCheck2">Spicy</label>
+
+
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="examplequa"> Quantity</label>
+                                            <input type="number" class="form-control" id="examplequa"
+                                                placeholder="Quantity">
+
+                                        </div>
+
+
+                                    </form>
+
+
+                                    <!-- </form-modal> -->
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#eModal">
+                                        Submit
+                                    </button>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Khao Soi -->
+            <!-- Khao Soi -->
+
+
+
+
+
+            <div class="card card-Rogan" style="width: 18rem;">
+                <img src="data:image/jpeg;base64,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"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Item Name--Khao Soi</h5>
+                    <p class="card-text">
+                        Price= 109/-only
+
+                    </p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-chole">
+                        Order Now
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="modal-chole" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Confirm Your Order</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+
+                                    <!-- <form-modal> -->
+                                    <form>
+                                        <div class="mb-3"><input type="text" class="form-control"
+                                                id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name">
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                                aria-describedby="emailHelp" placeholder="Email">
+                                            <div id="emailHelp" class="form-text">We'll never share your email with
+                                                anyone else.</div>
+                                        </div>
+                                        <div class="mb-3">
+
+                                            <input type="text" class="form-control" id="exampleInputPassword1"
+                                                placeholder="Phone Number">
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <p>
+                                                Preferences
+                                            </p>
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                <label class="form-check-label" for="exampleCheck1">hot</label>
+
+
+                                            </div>
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                                                <label class="form-check-label" for="exampleCheck2">Spicy</label>
+
+
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="examplequa"> Quantity</label>
+                                            <input type="number" class="form-control" id="examplequa"
+                                                placeholder="Quantity">
+
+                                        </div>
+
+
+                                    </form>
+
+
+                                    <!-- </form-modal> -->
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#eModal">
+                                        Submit
+                                    </button>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Yam Nua (Beef Salad) -->
+            <!-- Yam Nua (Beef Salad) -->
+
+
+
+            <div class="card card-Rogan" style="width: 18rem;">
+                <img src="https://basilandbubbly.com/wp-content/uploads/2020/03/thai-beef-salad-4.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Item Name--Yam Nua (Beef Salad)</h5>
+                    <p class="card-text">
+                        Price= 149/-only
+
+                    </p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-chole">
+                        Order Now
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="modal-chole" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Confirm Your Order</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+
+                                    <!-- <form-modal> -->
+                                    <form>
+                                        <div class="mb-3"><input type="text" class="form-control"
+                                                id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name">
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                                aria-describedby="emailHelp" placeholder="Email">
+                                            <div id="emailHelp" class="form-text">We'll never share your email with
+                                                anyone else.</div>
+                                        </div>
+                                        <div class="mb-3">
+
+                                            <input type="text" class="form-control" id="exampleInputPassword1"
+                                                placeholder="Phone Number">
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <p>
+                                                Preferences
+                                            </p>
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                <label class="form-check-label" for="exampleCheck1">hot</label>
+
+
+                                            </div>
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                                                <label class="form-check-label" for="exampleCheck2">Spicy</label>
+
+
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="examplequa"> Quantity</label>
+                                            <input type="number" class="form-control" id="examplequa"
+                                                placeholder="Quantity">
+
+                                        </div>
+
+
+                                    </form>
+
+
+                                    <!-- </form-modal> -->
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#eModal">
+                                        Submit
+                                    </button>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- North Indian Dish Second Layer Start -->
+        <!-- North Indian Dish Second Layer Start -->
+        <!-- North Indian Dish Second Layer Start -->
+        <!-- North Indian Dish Second Layer Start -->
+        <!-- North Indian Dish Second Layer Start -->
+        <!-- North Indian Dish Second Layer Start -->
+
+
+
+
+
+        <!-- Pad Woon Sen (Stir-fried Glass Noodles) -->
+        <!-- Pad Woon Sen (Stir-fried Glass Noodles)-->
+        <!-- Pad Woon Sen (Stir-fried Glass Noodles)-->
+
+
+
+
+        <div class="container north">
+            <div class="card card-Chole" style="width: 18rem;">
+                <img src="data:image/jpeg;base64,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"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Item Name--Pad Woon Sen (Stir-fried Glass Noodles)</h5>
+                    <p class="card-text">
+                        Price= 299/-only
+
+                    </p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-chole">
+                        Order Now
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="modal-chole" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Confirm Your Order</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+
+                                    <!-- <form-modal> -->
+                                    <form>
+                                        <div class="mb-3"><input type="text" class="form-control"
+                                                id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name">
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                                aria-describedby="emailHelp" placeholder="Email">
+                                            <div id="emailHelp" class="form-text">We'll never share your email with
+                                                anyone else.</div>
+                                        </div>
+                                        <div class="mb-3">
+
+                                            <input type="text" class="form-control" id="exampleInputPassword1"
+                                                placeholder="Phone Number">
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <p>
+                                                Preferences
+                                            </p>
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                <label class="form-check-label" for="exampleCheck1">hot</label>
+
+
+                                            </div>
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                                                <label class="form-check-label" for="exampleCheck2">Spicy</label>
+
+
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="examplequa"> Quantity</label>
+                                            <input type="number" class="form-control" id="examplequa"
+                                                placeholder="Quantity">
+
+                                        </div>
+
+
+                                    </form>
+
+
+                                    <!-- </form-modal> -->
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#eModal">
+                                        Submit
+                                    </button>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- Kway Teow (noodle soup) -->
+            <!-- Kway Teow (noodle soup)-->
+            <!-- Kway Teow (noodle soup) -->
+
+
+
+            <div class="card card-Rogan" style="width: 18rem;">
+                <img src="data:image/jpeg;base64,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" class="card-img-top"
+                    alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Item Name--Kway Teow (noodle soup)</h5>
+                    <p class="card-text">
+                        Price= 169/-only
+
+                    </p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-chole">
+                        Order Now
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="modal-chole" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Confirm Your Order</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+
+                                    <!-- <form-modal> -->
+                                    <form>
+                                        <div class="mb-3"><input type="text" class="form-control"
+                                                id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name">
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                                aria-describedby="emailHelp" placeholder="Email">
+                                            <div id="emailHelp" class="form-text">We'll never share your email with
+                                                anyone else.</div>
+                                        </div>
+                                        <div class="mb-3">
+
+                                            <input type="text" class="form-control" id="exampleInputPassword1"
+                                                placeholder="Phone Number">
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <p>
+                                                Preferences
+                                            </p>
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                <label class="form-check-label" for="exampleCheck1">hot</label>
+
+
+                                            </div>
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                                                <label class="form-check-label" for="exampleCheck2">Spicy</label>
+
+
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="examplequa"> Quantity</label>
+                                            <input type="number" class="form-control" id="examplequa"
+                                                placeholder="Quantity">
+
+                                        </div>
+
+
+                                    </form>
+
+
+                                    <!-- </form-modal> -->
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#eModal">
+                                        Submit
+                                    </button>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hor Mok Ma Prow Awn (seafood coconut curry) -->
+            <!-- Hor Mok Ma Prow Awn (seafood coconut curry)-->
+
+
+
+            <div class="card card-Rogan" style="width: 18rem;">
+                <img src="https://www.eatingthaifood.com/wp-content/uploads/2010/10/hor-mok.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Item Name--Hor Mok Ma Prow Awn (seafood coconut curry)</h5>
+                    <p class="card-text">
+                        Price= 99/-only
+
+                    </p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-chole">
+                        Order Now
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="modal-chole" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Confirm Your Order</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+
+                                    <!-- <form-modal> -->
+                                    <form>
+                                        <div class="mb-3"><input type="text" class="form-control"
+                                                id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name">
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                                aria-describedby="emailHelp" placeholder="Email">
+                                            <div id="emailHelp" class="form-text">We'll never share your email with
+                                                anyone else.</div>
+                                        </div>
+                                        <div class="mb-3">
+
+                                            <input type="text" class="form-control" id="exampleInputPassword1"
+                                                placeholder="Phone Number">
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <p>
+                                                Preferences
+                                            </p>
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                <label class="form-check-label" for="exampleCheck1">hot</label>
+
+
+                                            </div>
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                                                <label class="form-check-label" for="exampleCheck2">Spicy</label>
+
+
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="examplequa"> Quantity</label>
+                                            <input type="number" class="form-control" id="examplequa"
+                                                placeholder="Quantity">
+
+                                        </div>
+
+
+                                    </form>
+
+
+                                    <!-- </form-modal> -->
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#eModal">
+                                        Submit
+                                    </button>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pla Kapung Neung Manao (Steamed lime fish)-->
+            <!-- Pla Kapung Neung Manao (Steamed lime fish)-->
+
+
+
+
+
+            <div class="card card-Rogan" style="width: 18rem;">
+                <img src="https://chefquak.files.wordpress.com/2017/11/pla-neung-manao3.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Item Name--Pla Kapung Neung Manao (Steamed lime fish)</h5>
+                    <p class="card-text">
+                        Price= 199/-only
+
+                    </p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-chole">
+                        Order Now
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="modal-chole" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Confirm Your Order</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+
+                                    <!-- <form-modal> -->
+                                    <form>
+                                        <div class="mb-3"><input type="text" class="form-control"
+                                                id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name">
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                                aria-describedby="emailHelp" placeholder="Email">
+                                            <div id="emailHelp" class="form-text">We'll never share your email with
+                                                anyone else.</div>
+                                        </div>
+                                        <div class="mb-3">
+
+                                            <input type="text" class="form-control" id="exampleInputPassword1"
+                                                placeholder="Phone Number">
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <p>
+                                                Preferences
+                                            </p>
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                <label class="form-check-label" for="exampleCheck1">hot</label>
+
+
+                                            </div>
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                                                <label class="form-check-label" for="exampleCheck2">Spicy</label>
+
+
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="examplequa"> Quantity</label>
+                                            <input type="number" class="form-control" id="examplequa"
+                                                placeholder="Quantity">
+
+                                        </div>
+
+
+                                    </form>
+
+
+                                    <!-- </form-modal> -->
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#eModal">
+                                        Submit
+                                    </button>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Mango Sticky Rice-->
+            <!-- Mango Sticky Rice -->
+
+
+
+            <div class="card card-Rogan" style="width: 18rem;">
+                <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-190618-mango-sticky-rice-258-square-pf-1561646937.png"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Item Name--Mango Sticky Rice</h5>
+                    <p class="card-text">
+                        Price= 199/-only
+
+                    </p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-chole">
+                        Order Now
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="modal-chole" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Confirm Your Order</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+
+                                    <!-- <form-modal> -->
+                                    <form>
+                                        <div class="mb-3"><input type="text" class="form-control"
+                                                id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name">
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                                aria-describedby="emailHelp" placeholder="Email">
+                                            <div id="emailHelp" class="form-text">We'll never share your email with
+                                                anyone else.</div>
+                                        </div>
+                                        <div class="mb-3">
+
+                                            <input type="text" class="form-control" id="exampleInputPassword1"
+                                                placeholder="Phone Number">
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <p>
+                                                Preferences
+                                            </p>
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                <label class="form-check-label" for="exampleCheck1">hot</label>
+
+
+                                            </div>
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                                                <label class="form-check-label" for="exampleCheck2">Spicy</label>
+
+
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="examplequa"> Quantity</label>
+                                            <input type="number" class="form-control" id="examplequa"
+                                                placeholder="Quantity">
+
+                                        </div>
+
+
+                                    </form>
+
+
+                                    <!-- </form-modal> -->
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#eModal">
+                                        Submit
+                                    </button>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <!-- Classic Thai Food  Dishes Start -->
+        <!-- Classic Thai Food  Dishes Start -->
+        <!-- Classic Thai Food  Dishes Start -->
+        <!-- Classic Thai Food Dishes Start -->
+        <!-- Classic Thai Food Dishes Start -->
+        <!-- Classic Thai Food Dishes Start -->
+        <!-- Classic Thai Food Dishes Start -->
+        <!-- Classic Thai Food  Start -->
+        <!-- Classic Thai Food  Dishes Start -->
+
+
+
+
+
+
+        <div class="container">
+            <div class="main-title">Classic Thai Dishes</div>
+
+        </div>
+        <div class="container north">
+
+            <!-- Thai Chicken Satay
+            Thai Chicken Satay
+            Thai Chicken Satay
+            Thai Chicken Satay -->
+
+
+            <div class="card card-Chole" style="width: 18rem;">
+                <img src="https://static.toiimg.com/photo/52488524.cms"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Item Name--Thai Chicken Satay</h5>
+                    <p class="card-text">
+                        Price= 299/-only
+
+                    </p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-chole">
+                        Order Now
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="modal-chole" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Confirm Your Order</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+
+                                    <!-- <form-modal> -->
+                                    <form>
+                                        <div class="mb-3"><input type="text" class="form-control"
+                                                id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name">
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                                aria-describedby="emailHelp" placeholder="Email">
+                                            <div id="emailHelp" class="form-text">We'll never share your email with
+                                                anyone else.</div>
+                                        </div>
+                                        <div class="mb-3">
+
+                                            <input type="text" class="form-control" id="exampleInputPassword1"
+                                                placeholder="Phone Number">
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <p>
+                                                Preferences
+                                            </p>
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                <label class="form-check-label" for="exampleCheck1">hot</label>
+
+
+                                            </div>
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                                                <label class="form-check-label" for="exampleCheck2">Spicy</label>
+
+
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="examplequa"> Quantity</label>
+                                            <input type="number" class="form-control" id="examplequa"
+                                                placeholder="Quantity">
+
+                                        </div>
+
+
+                                    </form>
+
+
+                                    <!-- </form-modal> -->
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#eModal">
+                                        Submit
+                                    </button>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- Thai Mini Shrimp Lettuce Wraps
+            Thai Mini Shrimp Lettuce Wraps
+        Thai Mini Shrimp Lettuce Wraps
+    Thai Mini Shrimp Lettuce Wraps-->
+        
+
+
+
+
+            <div class="card card-Rogan" style="width: 18rem;">
+                <img src="data:image/jpeg;base64,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" class="card-img-top"
+                    alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Item Name--Thai Mini Shrimp Lettuce Wraps</h5>
+                    <p class="card-text">
+                        Price= 149/-only
+
+                    </p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-chole">
+                        Order Now
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="modal-chole" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Confirm Your Order</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+
+                                    <!-- <form-modal> -->
+                                    <form>
+                                        <div class="mb-3"><input type="text" class="form-control"
+                                                id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name">
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                                aria-describedby="emailHelp" placeholder="Email">
+                                            <div id="emailHelp" class="form-text">We'll never share your email with
+                                                anyone else.</div>
+                                        </div>
+                                        <div class="mb-3">
+
+                                            <input type="text" class="form-control" id="exampleInputPassword1"
+                                                placeholder="Phone Number">
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <p>
+                                                Preferences
+                                            </p>
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                <label class="form-check-label" for="exampleCheck1">hot</label>
+
+
+                                            </div>
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                                                <label class="form-check-label" for="exampleCheck2">Spicy</label>
+
+
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="examplequa"> Quantity</label>
+                                            <input type="number" class="form-control" id="examplequa"
+                                                placeholder="Quantity">
+
+                                        </div>
+
+
+                                    </form>
+
+
+                                    <!-- </form-modal> -->
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#eModal">
+                                        Submit
+                                    </button>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tom Yum Soup With Coconut Milk (Tom Khaa)-->
+            <!-- Tom Yum Soup With Coconut Milk (Tom Khaa)
+            Tom Yum Soup With Coconut Milk (Tom Khaa)
+        Tom Yum Soup With Coconut Milk (Tom Khaa)
+    Tom Yum Soup With Coconut Milk (Tom Khaa)-->
+
+
+
+            <div class="card card-Rogan" style="width: 18rem;">
+                <img src="data:image/jpeg;base64,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"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Item Name--Tom Yum Soup With Coconut Milk (Tom Khaa)</h5>
+                    <p class="card-text">
+                        Price= 289/-only
+
+                    </p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-chole">
+                        Order Now
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="modal-chole" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Confirm Your Order</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+
+                                    <!-- <form-modal> -->
+                                    <form>
+                                        <div class="mb-3"><input type="text" class="form-control"
+                                                id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name">
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                                aria-describedby="emailHelp" placeholder="Email">
+                                            <div id="emailHelp" class="form-text">We'll never share your email with
+                                                anyone else.</div>
+                                        </div>
+                                        <div class="mb-3">
+
+                                            <input type="text" class="form-control" id="exampleInputPassword1"
+                                                placeholder="Phone Number">
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <p>
+                                                Preferences
+                                            </p>
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                <label class="form-check-label" for="exampleCheck1">hot</label>
+
+
+                                            </div>
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                                                <label class="form-check-label" for="exampleCheck2">Spicy</label>
+
+
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="examplequa"> Quantity</label>
+                                            <input type="number" class="form-control" id="examplequa"
+                                                placeholder="Quantity">
+
+                                        </div>
+
+
+                                    </form>
+
+
+                                    <!-- </form-modal> -->
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#eModal">
+                                        Submit
+                                    </button>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Larb Gai Thai Chicken Salad -->
+            <!-- Larb Gai Thai Chicken Salad -->
+
+
+
+
+
+            <div class="card card-Rogan" style="width: 18rem;">
+                <img src="https://www.thespruceeats.com/thmb/qhIdUwgHxMyQIuEYRnMebXRBmYc=/4494x3000/filters:no_upscale()/larb-gai-thai-salad-3217680-step-10-1ff36bbf7fb74ac7b78376c029b146bd.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Item Name--Larb Gai Thai Chicken Salad</h5>
+                    <p class="card-text">
+                        Price= 109/-only
+
+                    </p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-chole">
+                        Order Now
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="modal-chole" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Confirm Your Order</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+
+                                    <!-- <form-modal> -->
+                                    <form>
+                                        <div class="mb-3"><input type="text" class="form-control"
+                                                id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name">
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                                aria-describedby="emailHelp" placeholder="Email">
+                                            <div id="emailHelp" class="form-text">We'll never share your email with
+                                                anyone else.</div>
+                                        </div>
+                                        <div class="mb-3">
+
+                                            <input type="text" class="form-control" id="exampleInputPassword1"
+                                                placeholder="Phone Number">
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <p>
+                                                Preferences
+                                            </p>
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                <label class="form-check-label" for="exampleCheck1">hot</label>
+
+
+                                            </div>
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                                                <label class="form-check-label" for="exampleCheck2">Spicy</label>
+
+
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="examplequa"> Quantity</label>
+                                            <input type="number" class="form-control" id="examplequa"
+                                                placeholder="Quantity">
+
+                                        </div>
+
+
+                                    </form>
+
+
+                                    <!-- </form-modal> -->
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#eModal">
+                                        Submit
+                                    </button>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Thai Waterfall Beef Salad-->
+            <!-- Thai Waterfall Beef Salad-->
+
+
+
+            <div class="card card-Rogan" style="width: 18rem;">
+                <img src="https://www.carolinescooking.com/wp-content/uploads/2018/03/Thai-beef-salad-Nam-Tok-waterfall-beef-photo.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Item Name--Thai Waterfall Beef Salad</h5>
+                    <p class="card-text">
+                        Price= 149/-only
+
+                    </p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-chole">
+                        Order Now
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="modal-chole" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Confirm Your Order</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+
+                                    <!-- <form-modal> -->
+                                    <form>
+                                        <div class="mb-3"><input type="text" class="form-control"
+                                                id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name">
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                                aria-describedby="emailHelp" placeholder="Email">
+                                            <div id="emailHelp" class="form-text">We'll never share your email with
+                                                anyone else.</div>
+                                        </div>
+                                        <div class="mb-3">
+
+                                            <input type="text" class="form-control" id="exampleInputPassword1"
+                                                placeholder="Phone Number">
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <p>
+                                                Preferences
+                                            </p>
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                <label class="form-check-label" for="exampleCheck1">hot</label>
+
+
+                                            </div>
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                                                <label class="form-check-label" for="exampleCheck2">Spicy</label>
+
+
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="examplequa"> Quantity</label>
+                                            <input type="number" class="form-control" id="examplequa"
+                                                placeholder="Quantity">
+
+                                        </div>
+
+
+                                    </form>
+
+
+                                    <!-- </form-modal> -->
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#eModal">
+                                        Submit
+                                    </button>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- North Indian Dish Second Layer Start -->
+        <!-- North Indian Dish Second Layer Start -->
+        <!-- North Indian Dish Second Layer Start -->
+        <!-- North Indian Dish Second Layer Start -->
+        <!-- North Indian Dish Second Layer Start -->
+        <!-- North Indian Dish Second Layer Start -->
+
+
+
+
+
+       
+
+
+
+
+        <div class="container north">
+             <!-- Green Papaya Salad (Som Tam) -->
+        <!-- Green Papaya Salad (Som Tam)-->
+        <!-- Green Papaya Salad (Som Tam)-->
+
+
+            <div class="card card-Chole" style="width: 18rem;">
+                <img src="https://c.ndtvimg.com/1hkfbvu_som-tam-salad_625x300_04_September_18.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Item Name--Green Papaya Salad (Som Tam)</h5>
+                    <p class="card-text">
+                        Price= 299/-only
+
+                    </p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-chole">
+                        Order Now
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="modal-chole" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Confirm Your Order</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+
+                                    <!-- <form-modal> -->
+                                    <form>
+                                        <div class="mb-3"><input type="text" class="form-control"
+                                                id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name">
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                                aria-describedby="emailHelp" placeholder="Email">
+                                            <div id="emailHelp" class="form-text">We'll never share your email with
+                                                anyone else.</div>
+                                        </div>
+                                        <div class="mb-3">
+
+                                            <input type="text" class="form-control" id="exampleInputPassword1"
+                                                placeholder="Phone Number">
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <p>
+                                                Preferences
+                                            </p>
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                <label class="form-check-label" for="exampleCheck1">hot</label>
+
+
+                                            </div>
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                                                <label class="form-check-label" for="exampleCheck2">Spicy</label>
+
+
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="examplequa"> Quantity</label>
+                                            <input type="number" class="form-control" id="examplequa"
+                                                placeholder="Quantity">
+
+                                        </div>
+
+
+                                    </form>
+
+
+                                    <!-- </form-modal> -->
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#eModal">
+                                        Submit
+                                    </button>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- Thai Weeping Tiger Beef
+            Thai Weeping Tiger Beef
+        Thai Weeping Tiger Beef
+    Thai Weeping Tiger Beef -->
+
+
+
+            <div class="card card-Rogan" style="width: 18rem;">
+                <img src="https://www.seriouseats.com/thmb/w6tfa2DLRPISF76T3OnRGViJLWg=/543x407/smart/filters:no_upscale()/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__images__2012__07__20120709-212902-Crying-Tiger-Post-17ed90b97e714941ac02889ba6f52d68.jpg" class="card-img-top"
+                    alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Item Name--Thai Weeping Tiger Beef</h5>
+                    <p class="card-text">
+                        Price= 169/-only
+
+                    </p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-chole">
+                        Order Now
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="modal-chole" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Confirm Your Order</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+
+                                    <!-- <form-modal> -->
+                                    <form>
+                                        <div class="mb-3"><input type="text" class="form-control"
+                                                id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name">
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                                aria-describedby="emailHelp" placeholder="Email">
+                                            <div id="emailHelp" class="form-text">We'll never share your email with
+                                                anyone else.</div>
+                                        </div>
+                                        <div class="mb-3">
+
+                                            <input type="text" class="form-control" id="exampleInputPassword1"
+                                                placeholder="Phone Number">
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <p>
+                                                Preferences
+                                            </p>
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                <label class="form-check-label" for="exampleCheck1">hot</label>
+
+
+                                            </div>
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                                                <label class="form-check-label" for="exampleCheck2">Spicy</label>
+
+
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="examplequa"> Quantity</label>
+                                            <input type="number" class="form-control" id="examplequa"
+                                                placeholder="Quantity">
+
+                                        </div>
+
+
+                                    </form>
+
+
+                                    <!-- </form-modal> -->
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#eModal">
+                                        Submit
+                                    </button>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Thai Green Curry
+            Thai Green Curry
+        Thai Green Curry
+    Thai Green Curry -->
+
+
+
+            <div class="card card-Rogan" style="width: 18rem;">
+                <img src="https://www.kitchensanctuary.com/wp-content/uploads/2019/06/Thai-Green-Curry-square-FS-500x500.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Item Name--Thai Green Curry</h5>
+                    <p class="card-text">
+                        Price= 99/-only
+
+                    </p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-chole">
+                        Order Now
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="modal-chole" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Confirm Your Order</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+
+                                    <!-- <form-modal> -->
+                                    <form>
+                                        <div class="mb-3"><input type="text" class="form-control"
+                                                id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name">
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                                aria-describedby="emailHelp" placeholder="Email">
+                                            <div id="emailHelp" class="form-text">We'll never share your email with
+                                                anyone else.</div>
+                                        </div>
+                                        <div class="mb-3">
+
+                                            <input type="text" class="form-control" id="exampleInputPassword1"
+                                                placeholder="Phone Number">
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <p>
+                                                Preferences
+                                            </p>
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                <label class="form-check-label" for="exampleCheck1">hot</label>
+
+
+                                            </div>
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                                                <label class="form-check-label" for="exampleCheck2">Spicy</label>
+
+
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="examplequa"> Quantity</label>
+                                            <input type="number" class="form-control" id="examplequa"
+                                                placeholder="Quantity">
+
+                                        </div>
+
+
+                                    </form>
+
+
+                                    <!-- </form-modal> -->
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#eModal">
+                                        Submit
+                                    </button>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Thai Panang Curry-->
+            <!-- Thai Panang Curry-->
+
+
+
+
+
+            <div class="card card-Rogan" style="width: 18rem;">
+                <img src="https://cookieandkate.com/images/2019/01/best-panang-curry-recipe.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Item Name--Thai Panang Curry</h5>
+                    <p class="card-text">
+                        Price= 199/-only
+
+                    </p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-chole">
+                        Order Now
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="modal-chole" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Confirm Your Order</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+
+                                    <!-- <form-modal> -->
+                                    <form>
+                                        <div class="mb-3"><input type="text" class="form-control"
+                                                id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name">
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                                aria-describedby="emailHelp" placeholder="Email">
+                                            <div id="emailHelp" class="form-text">We'll never share your email with
+                                                anyone else.</div>
+                                        </div>
+                                        <div class="mb-3">
+
+                                            <input type="text" class="form-control" id="exampleInputPassword1"
+                                                placeholder="Phone Number">
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <p>
+                                                Preferences
+                                            </p>
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                <label class="form-check-label" for="exampleCheck1">hot</label>
+
+
+                                            </div>
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                                                <label class="form-check-label" for="exampleCheck2">Spicy</label>
+
+
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="examplequa"> Quantity</label>
+                                            <input type="number" class="form-control" id="examplequa"
+                                                placeholder="Quantity">
+
+                                        </div>
+
+
+                                    </form>
+
+
+                                    <!-- </form-modal> -->
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#eModal">
+                                        Submit
+                                    </button>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Classic Yellow Curry Chicken
+            Classic Yellow Curry Chicken 
+        Classic Yellow Curry Chicken
+            Classic Yellow Curry Chicken-->
+            
+
+
+
+            <div class="card card-Rogan" style="width: 18rem;">
+                <img src="data:image/jpeg;base64,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"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Item Name--Classic Yellow Curry Chicken</h5>
+                    <p class="card-text">
+                        Price= 199/-only
+
+                    </p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-chole">
+                        Order Now
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="modal-chole" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Confirm Your Order</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+
+                                    <!-- <form-modal> -->
+                                    <form>
+                                        <div class="mb-3"><input type="text" class="form-control"
+                                                id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name">
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                                aria-describedby="emailHelp" placeholder="Email">
+                                            <div id="emailHelp" class="form-text">We'll never share your email with
+                                                anyone else.</div>
+                                        </div>
+                                        <div class="mb-3">
+
+                                            <input type="text" class="form-control" id="exampleInputPassword1"
+                                                placeholder="Phone Number">
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <p>
+                                                Preferences
+                                            </p>
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                <label class="form-check-label" for="exampleCheck1">hot</label>
+
+
+                                            </div>
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                                                <label class="form-check-label" for="exampleCheck2">Spicy</label>
+
+
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="examplequa"> Quantity</label>
+                                            <input type="number" class="form-control" id="examplequa"
+                                                placeholder="Quantity">
+
+                                        </div>
+
+
+                                    </form>
+
+
+                                    <!-- </form-modal> -->
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#eModal">
+                                        Submit
+                                    </button>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+
+</body>
+
+</html>
